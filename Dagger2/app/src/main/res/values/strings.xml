@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Construct</string>
     <string name="subtitle">Construct Aplication</string>
+    <string name="login_activity_label">Login</string>
 </resources>

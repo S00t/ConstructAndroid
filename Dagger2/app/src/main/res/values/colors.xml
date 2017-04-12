@@ -28,6 +28,7 @@
 
     <item name="DodgerBlueOragne" type="color">#FF8E00 </item>
     <item name="LightDodgerBlueOragne" type="color">#FFA330 </item>
+    <item name="LightDodgerBlueOragneAlpha" type="color">#80FFA330 </item>
     <item name="DarkDodgerBlueOragne" type="color">#D37600 </item>
 
 
