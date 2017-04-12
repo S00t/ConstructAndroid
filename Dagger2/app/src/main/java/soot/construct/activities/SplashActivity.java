@@ -14,7 +14,7 @@ import soot.construct.databinding.ActivitySplashBinding;
 public class SplashActivity extends AppCompatActivity {
 
     // Splash screen timer
-    private static int SPLASH_TIME_OUT = 150000;
+    private static int SPLASH_TIME_OUT = 15000;
 
     private ActivitySplashBinding mSplashBinding;
 
@@ -24,11 +24,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        mSplashBinding = DataBindingUtil.setContentView(this, R.layout.activity_splash);
 
-
-       mSplashBinding = DataBindingUtil.setContentView(this, R.layout.activity_splash);
-
-        //setContentView(R.layout.activity_splash);
         new Handler().postDelayed(new Runnable() {
 
             /*
@@ -38,12 +35,8 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void run() {
-                // This method will be executed once the timer is over
-                // Start your app main activity
                 Intent i = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(i);
-
-                // close this activity
                 finish();
             }
         }, SPLASH_TIME_OUT);

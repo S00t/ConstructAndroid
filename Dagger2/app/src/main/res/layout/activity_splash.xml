@@ -15,16 +15,10 @@
         android:src="@drawable/city_glitter"
         android:scaleType="centerCrop"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/SubtitleBackground"
+            style="@style/BackgroundWithBorderOrange"
             >
             <TextView
                 android:id="@+id/subtitle"
@@ -34,9 +28,25 @@
 
                 />
         </LinearLayout>
+        <LinearLayout
+            style="@style/AuthorBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/author"
+                style="@style/Author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 
+            <TextView
+                android:id="@+id/author_name"
+                style="@style/AuthorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author"/>
 
-
-    </LinearLayout>
+        </LinearLayout>
 </RelativeLayout>
 </layout>
