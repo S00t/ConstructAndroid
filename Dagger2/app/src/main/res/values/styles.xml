@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/EastBay</item>
+        <item name="colorPrimaryDark">@color/MidnightExpress</item>
+        <item name="colorAccent">@color/DodgerBlue</item>
+    </style>
+
+    <style name="Subtitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:text">@string/subtitle</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+    </style>
+
+    <style name="SubtitleBackground">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/boarder_orane</item>
+    </style>
+
+</resources>
